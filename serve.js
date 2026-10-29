@@ -23,4 +23,4 @@ http.createServer((request, response) => {
     response.writeHead(200, { 'Content-Type': types[path.extname(file)] || 'application/octet-stream', 'Cache-Control': 'no-store' });
     response.end(data);
   });
-}).listen(4173, '127.0.0.1', () => console.log('Portfolio running at http://localhost:4173'));
+}).listen(4173, '127.0.0.1', () => console.log('SignalRoom running at http://localhost:4173'));
